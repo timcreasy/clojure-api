@@ -6,7 +6,10 @@
   :repositories {"my.datomic.com" {:url "https://my.datomic.com/repo"
                                    :creds :gpg}}
   :dependencies [[org.clojure/clojure "1.8.0"]
-                 [com.datomic/datomic-pro "0.9.5544"]]
+                 [com.datomic/datomic-pro "0.9.5544"]
+                 [ring/ring-jetty-adapter "1.5.0"]
+                 [ring/ring-core "1.5.0"]
+                 [compojure "1.5.1"]]
   :main ^:skip-aot clojure-api.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})
